@@ -48,7 +48,7 @@ def inizia_il_gioco(self):
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i==j:
+    while i!=j:
         verifica = input('Scrivi qui la parola: ')
         if verifica == lista [i]:
             print ('Bravo! Risposta Esatta!')
@@ -63,7 +63,7 @@ def inizia_il_gioco(self):
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i==j:
+    while i!=j:
         verifica = input('Scrivi qui la parola: ')
         if verifica == lista [i]:
             print ('Bravo! Risposta Esatta!')
@@ -78,7 +78,7 @@ def inizia_il_gioco(self):
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i==j:
+    while i!=j:
         verifica = input('Scrivi qui la parola: ')
         if verifica == lista [i]:
             print ('Bravo! Risposta Esatta!')
