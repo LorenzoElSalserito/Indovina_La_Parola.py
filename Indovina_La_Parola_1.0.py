@@ -29,7 +29,26 @@ def randomizza_lettere_parole_lista(lista):
 		a.append(''.join(i))
 """
 
-def inizia_il_gioco(self):
+
+def verifica (lista):
+	i=0
+	j=5
+	lista = [i:j]
+	while i!=j:
+        verifica = input('Scrivi qui la parola: ')
+        if verifica == lista [i]:
+            print ('Bravo! Risposta Esatta!')
+            i=i+1
+        else:
+			print ('Risposta sbagliata! La parola esatta era: ', lista[i])
+			i=i+1
+			
+	if i == j:
+		i=j
+		j+=5
+
+
+__main__ ():
 	print ('Ciao! Benvenuto ad "Indovina la Parola"')
 	print (' ')
 	print ('Io sono ENER-OS, e sono qui per farti giocare!')
@@ -42,50 +61,25 @@ def inizia_il_gioco(self):
 	         'triciclo','trattore','elicottero','sottomarino',
 	         'yatch','teletrasporto','navicella','shuttle',
 	         'monociclo','carrozza','camion']
-    i=0
-    j=5
     print (lista[i:j])
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i!=j:
-        verifica = input('Scrivi qui la parola: ')
-        if verifica == lista [i]:
-            print ('Bravo! Risposta Esatta!')
-            i=i+1
-        else:
-			print ('Risposta sbagliata! La parola esatta era: ', lista[i])
-			i=i+1
-
-    j=10
+    verifica(lista[i:j])
+    
     print ('Hai superato la prima manche, ne restano 2')
     print (lista[i:j]
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i!=j:
-        verifica = input('Scrivi qui la parola: ')
-        if verifica == lista [i]:
-            print ('Bravo! Risposta Esatta!')
-            i=i+1
-        else:
-			print ('Risposta sbagliata! La parola esatta era: ', lista[i])
-			i=i+1
-
-    j=15
+    verifica(lista[i:j])
+    
     print ('Hai superato la seconda manche, resta la manche FINALE')
     print (lista[i:j]
     print ('Adesso inizia il Gioco!')
     print ('Le parole da analizzare sono: ', randomizza_lettere_parole_lista(lista[i:j]))
 
-    while i!=j:
-        verifica = input('Scrivi qui la parola: ')
-        if verifica == lista [i]:
-            print ('Bravo! Risposta Esatta!')
-            i=i+1
-        else:
-			print ('Risposta sbagliata! La parola esatta era: ', lista[i])
-			i=i+1
+    verifica(lista[i:j])
 
     print ('Hai completato con successo la versione 1.0 del gioco!')
     print ('Spero che ti sia divertito! Ti aspetto per una nuova partita')
